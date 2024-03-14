@@ -1,0 +1,54 @@
+.main {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100dvh;
+  width: 100vw;
+  z-index: 1000;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.container {
+  background-color: var(--white);
+  height: 100%;
+  width: 60%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: translate 0.3s ease;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+}
+
+.closeButton > svg {
+  fill: var(--dark-grayish-blue);
+}
+
+.linkContainer {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.navLink {
+  text-decoration: none;
+  color: var(--very-dark-blue);
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.navLink.active {
+  color: var(--orange);
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    display: flex;
+  }
+}
