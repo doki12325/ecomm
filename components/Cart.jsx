@@ -11,7 +11,7 @@ function Cart() {
         <>
           <div className={styles.itemContainer}>
             {dataContext.cart.cartData.map((data, index) => (
-              <div className={styles.cartItem}>
+              <div className={styles.cartItem} key={index}>
                 <div className={styles.itemImageContainer}>
                   <Image
                     src={data.product.imageData[0].thumbImage}
