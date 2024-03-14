@@ -6,10 +6,10 @@ import Image from "next/image";
 import profile from "@public/assets/image-avatar.png";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import MobileNav from "./MobileNav";
+import MobileNav from "@components/MobileNav";
 import { useState } from "react";
-import Cart from "./cart";
-import { useDataContext } from "./ContextProvider";
+import Cart from "@components/cart";
+import { useDataContext } from "@components/ContextProvider";
 
 function Navbar() {
   const dataContext = useDataContext();

@@ -1,5 +1,5 @@
 import styles from "@styles/cart.module.css";
-import { useDataContext } from "./ContextProvider";
+import { useDataContext } from "@components/ContextProvider";
 import Image from "next/image";
 
 function Cart() {
