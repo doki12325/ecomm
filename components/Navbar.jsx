@@ -8,7 +8,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import MobileNav from "@components/MobileNav";
 import { useState } from "react";
-import Cart from "@components/cart";
+import Cart from "@components/Cart";
 import { useDataContext } from "@components/ContextProvider";
 
 function Navbar() {
